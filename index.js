@@ -18,3 +18,10 @@ db.sequelize.sync()
     console.error('Failed to sync database:', err);
   });
 
+// Create / Tambah Komik
+app.post("/komik", async (req, res) => {
+  const data = req.body;
+  try {
+    const komik = await db.komik.create(data);
+    res.status(201).send(komik);  
+
