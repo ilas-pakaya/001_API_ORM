@@ -8,4 +8,10 @@ app.use(express.urlencoded({
   extended: false
 }));
 
+db.sequelize.sync()
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
+    });
+  })
 
