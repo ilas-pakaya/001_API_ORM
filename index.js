@@ -24,4 +24,8 @@ app.post("/komik", async (req, res) => {
   try {
     const komik = await db.komik.create(data);
     res.status(201).send(komik);  
+  } catch (err) {
+    res.status(500).send(err);
+  }
+});
 
