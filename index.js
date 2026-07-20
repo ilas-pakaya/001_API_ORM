@@ -29,3 +29,8 @@ app.post("/komik", async (req, res) => {
   }
 });
 
+// Read All / Tampilkan Semua Komik
+app.get('/komik', async (req, res) => {
+  try {
+    const komik = await db.komik.findAll();
+
