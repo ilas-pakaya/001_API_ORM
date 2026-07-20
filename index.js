@@ -14,4 +14,7 @@ db.sequelize.sync()
       console.log(`Server started on port ${PORT}`);
     });
   })
+  .catch((err) => {
+    console.error('Failed to sync database:', err);
+  });
 
