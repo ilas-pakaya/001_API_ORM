@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.md    config/config.js
+.env
+package-lock.json
+cek.md

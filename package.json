@@ -1,0 +1,32 @@
+{
+  "name": "pertemuan_5",
+  "version": "1.0.0",
+  "description": "TESTING POSTMAN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "pg": "^8.22.0",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kysohee18/046_API_ORM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kysohee18/046_API_ORM/issues"
+  },
+  "homepage": "https://github.com/Kysohee18/046_API_ORM#readme"
+}
