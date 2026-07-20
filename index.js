@@ -39,3 +39,8 @@ app.get('/komik', async (req, res) => {
   }
 });
 
+// Update / Ubah Komik
+app.put('/komik/:id', async (req, res) => {
+  const id = req.params.id;
+  const data = req.body;
+
